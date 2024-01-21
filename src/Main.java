@@ -2,6 +2,9 @@
 // then press Enter. You can now see whitespace characters in your code.
 import FactoryExample.FabricaDeHelados;
 import FactoryExample.Helado;
+import Observer.TemperatureDisplay;
+import Observer.WeatherStation;
+import Observer.WeatherWarning;
 import mensajes.Email;
 import mensajes.Mensaje;
 import mensajes.Whatapp;
@@ -20,5 +23,18 @@ public class Main {
         // Preparar los helados
         heladoChocolate.preparar();
         heladoFresa.preparar();
+
+
+       /* WeatherStation weatherStation = new WeatherStation();
+
+        TemperatureDisplay temperatureDisplay = new TemperatureDisplay();
+        WeatherWarning weatherWarning = new WeatherWarning(30);
+
+        weatherStation.addObserver(temperatureDisplay);
+        weatherStation.addObserver(weatherWarning);
+
+        weatherStation.setTemperature(20);
+        weatherStation.setTemperature(35);*/
+
     }
 }
